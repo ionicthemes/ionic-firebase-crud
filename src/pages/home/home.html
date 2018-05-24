@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Firestore Form
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="simple_form" >
+      <ion-item>
+        <ion-label floating >Name</ion-label>
+        <ion-input type="text" formControlName="name" class="form-controll" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating >Surname</ion-label>
+        <ion-input type="text" formControlName="surname" class="form-controll" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating >Age</ion-label>
+        <ion-textarea type="number" formControlName="age" class="form-controll" required></ion-textarea>
+      </ion-item>
+
+    </form>
+    <button ion-button full [disabled]="!simple_form.valid" (click)="add(simple_form.value)" type="submit">Add</button>
+</ion-content>
