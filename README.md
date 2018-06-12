@@ -1,12 +1,15 @@
-## Submit Form data to Firebase database from an Ionic app
+## Setting up a Database for an Ionic App with Firebase
 
-This repo shows how to submit the data of an Ionic form to a Cloud Firestore database. 
-It's a simple ionic example with the goal of helping you with the Firestore comunication from an Ionic app.
+Support for Firebase in Ionic and angular has been growing recently, and in this ionic tutorial, we will show you how to upload data from an Ionic 3 app to a database in Firebase Cloud Firestore
 
-The tutorial will be soon published in https://ionicthemes.com/tutorials
+In this ionic tutorial you will learn how to send data from a form made in an Ionic 3 application to a Cloud Firestore data base. This ionic tutorial includes a working example you can reuse for your needs!
+
+This repo is a simple ionic app example with the goal of helping you with the Firestore comunication from an Ionic app.
+
+Read the complete Ionic Firebase Tutorial in https://ionicthemes.com/tutorials/about/setting-up-a-database-for-an-ionic-app-with-firebase
 
 ## Español
-Este repositorio es parte del tutorial ¿Cómo hacer un formulario en Ionic y enviar los datos a Firebase?
+Este repositorio es parte del tutorial ¿Cómo conectar mi App de Ionic Framework con una base de datos de Firebase?
 
 En este tutorial vamos a mostrar cómo subir datos desde una aplicación de ionic framework a una base de datos en Firebase Cloud Firestore. 
 
