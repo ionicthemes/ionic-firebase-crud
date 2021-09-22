@@ -1,8 +1,5 @@
 {
-  "name": "simple-form-firebase",
-  "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
+  "name": "firebase-database-tutorial",
+  "integrations": {},
+  "type": "angular"
 }

@@ -1,16 +1,11 @@
-## Setting up a Database for an Ionic App with Firebase
+## Ionic app with Firebase Database
 
-Support for Firebase in Ionic and angular has been growing recently, and in this ionic tutorial, we will show you how to upload data from an Ionic 3 app to a database in Firebase Cloud Firestore
+There are a variety of options available for storing data, and choosing the right one will depend on your application needs, your expertise, and resources.
 
-In this ionic tutorial you will learn how to send data from a form made in an Ionic 3 application to a Cloud Firestore data base. This ionic tutorial includes a working example you can reuse for your needs!
+Firebase offers Cloud Firestore which is a flexible, scalable NoSQL cloud database that is very easy to use with an Ionic app.
 
-This repo is a simple ionic app example with the goal of helping you with the Firestore comunication from an Ionic app.
+This repo is an Ionic demo app of a Contacts CRUD build with Firebase.
 
-Read the complete Ionic Firebase Tutorial in https://ionicthemes.com/tutorials/about/setting-up-a-database-for-an-ionic-app-with-firebase
+You can find companion tutorial that explains all the steps needed in order to set up a Firestore database and connect it with your Ionic application in order to save and fetch data.
 
-## Español
-Este repositorio es parte del tutorial ¿Cómo conectar mi App de Ionic Framework con una base de datos de Firebase?
-
-En este tutorial vamos a mostrar cómo subir datos desde una aplicación de ionic framework a una base de datos en Firebase Cloud Firestore. 
-
-Puedes leer el tutorial completo en español en [este Link](https://medium.com/learn-ionic-framework/c%C3%B3mo-hacer-un-formulario-en-ionic-y-enviar-los-datos-a-firebase-b8bdd84b99f2)
+If you are looking for an Ionic Starter App with Firestore integration ready to go, you should check [Ionic Full Starter App - PRO](https://ionicthemes.com/templates/ionic5-full-starter-app-pro-version).  It includes many examples and use cases of data handling using Ionic and Firebase.

@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>New Contact</ion-title>
+    <ion-buttons slot="start">
+      <ion-button color="primary" (click)="dismissModal()">
+        Cancel
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="primary" [disabled]="!createContactForm.valid" (click)="submitForm()">
+        Done
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-thumbnail class="user-image">
+    <img src="/assets/avatar.png">
+  </ion-thumbnail>
+
+  <ion-row class="add-photo-wrapper">
+    <ion-button fill="clear">Add Photo</ion-button>
+  </ion-row>
+
+  <form [formGroup]="createContactForm" #createForm="ngForm" (ngSubmit)="createContact(createContactForm.value)">
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="First name" inputMode="text" clearInput="true" formControlName="firstName" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Last name" inputMode="text" clearInput="true" formControlName="lastName" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Email" inputMode="email" clearInput="true" formControlName="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Phone" inputMode="tel" clearInput="true" formControlName="phone" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Category</ion-label>
+        <ion-select placeholder="Select one" formControlName="category">
+          <ion-select-option value="Family">Family</ion-select-option>
+          <ion-select-option value="Friend">Friend</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
