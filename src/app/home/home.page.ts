@@ -18,10 +18,6 @@ export class HomePage {
     public modalController: ModalController,
     private routerOutlet: IonRouterOutlet
   ) {
-    this.loadContacts();
-  }
-
-  loadContacts() {
     this.contacts = this.dataService.getContacts();
   }
 
@@ -30,10 +26,6 @@ export class HomePage {
       component: NewContactPage,
       swipeToClose: true,
       presentingElement: this.routerOutlet.nativeEl
-    });
-
-    modal.onWillDismiss().then(() => {
-      this.loadContacts();
     });
 
     return await modal.present();

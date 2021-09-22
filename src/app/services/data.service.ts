@@ -13,6 +13,7 @@ export class DataService {
 
   getContacts(): Observable<Contact[]> {
     const contactsCollection = collection(this.firestore, 'contacts');
+    // this method returns a stream of documents mapped to their payload and id
     return collectionData(contactsCollection, {idField: 'id'})
     .pipe(
       map(contacts => contacts as Contact[])
