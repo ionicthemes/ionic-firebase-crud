@@ -9,12 +9,14 @@ import { Firestore, collectionData, collection, doc, setDoc, deleteDoc, docSnaps
 })
 export class DataService {
 
-
   constructor(private firestore: Firestore) {}
 
-  getContacts(): Observable<any[]> {
+  getContacts(): Observable<Contact[]> {
     const contactsCollection = collection(this.firestore, 'contacts');
-    return collectionData(contactsCollection, {idField: 'id'});
+    return collectionData(contactsCollection, {idField: 'id'})
+    .pipe(
+      map(contacts => contacts as Contact[])
+    );
   }
 
   getContactById(id: string): Observable<Contact> {
@@ -36,7 +38,7 @@ export class DataService {
 
   updateContact(contact: Contact): Promise<void> {
     const document = doc(this.firestore, 'contacts', contact?.id);
-    const { id, ...data } = contact;
+    const { id, ...data } = contact; // we don't want to save the id inside the document
     return setDoc(document, data);
   }
 

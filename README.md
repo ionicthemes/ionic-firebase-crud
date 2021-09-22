@@ -9,3 +9,5 @@ This repo is an Ionic demo app of a Contacts CRUD build with Firebase.
 You can find companion tutorial that explains all the steps needed in order to set up a Firestore database and connect it with your Ionic application in order to save and fetch data.
 
 If you are looking for an Ionic Starter App with Firestore integration ready to go, you should check [Ionic Full Starter App - PRO](https://ionicthemes.com/templates/ionic5-full-starter-app-pro-version).  It includes many examples and use cases of data handling using Ionic and Firebase.
+
+[DEMO](https://ionic-contacts-app.web.app/home) 
