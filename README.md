@@ -10,4 +10,7 @@ We suggest you to read the companion tutorial that explains all the steps needed
 
 If you are looking for an Ionic Starter App with Firestore integration ready to go, you should check [Ionic Full Starter App - PRO](https://ionicthemes.com/templates/ionic5-full-starter-app-pro-version).  It includes many examples and use cases of data handling using Ionic and Firebase.
 
-[DEMO](https://ionic-contacts-app.web.app/home) 
+- [DEMO](https://ionic-contacts-app.web.app/home) 
+- [TUTORIAL](https://ionicthemes.com/tutorials/add-a-firebase-database-to-your-ionic-app) 
+
+![](https://static.ionicthemes.com/freebies/add-a-firebase-database-to-your-ionic-app-freebie.png)
